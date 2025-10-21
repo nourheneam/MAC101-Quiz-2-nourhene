@@ -2,15 +2,22 @@
 using namespace std;
 
 int main() {
-    //TODO: Create int var and cout and cin commands
+    int limit;
 
+    cout << "Enter a number to loop through: ";
+    cin >> limit;
 
-    // TODO: Write a for loop that runs from 1 to limit
+    for (int i = 1; i <= limit; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            cout << "FrizzBuzz" << endl;
+        } else if (i % 3 == 0) {
+            cout << "Fizz" << endl;
+        } else if (i % 5 == 0) {
+            cout << "Buzz" << endl;
+        } else {
+            cout << i << endl;
+        }
+    }
     
-
-        // TODO: Use if/else statements to apply FizzBuzz logic
-
-    
-
     return 0;
-}
+}    
